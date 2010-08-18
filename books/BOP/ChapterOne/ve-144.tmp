@@ -1,0 +1,67 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ChapterOne
+{
+    /// <summary>
+    /// 象棋将帅问题
+    /// </summary>
+    class ChessBoss
+    {
+        ///编程之美，象棋将帅问题：
+        ///题目要求：
+        ///1.输出所有的将帅合法位置
+        ///2.只能运用一个变量
+        ///
+
+
+        ///唯一的一个变量，用于表示合法位置，以及临时变量等等 
+        ///共16位，前两个四位表示两个棋子的位置坐标，
+        ///后两个四位表示两个循环的循环变量
+        Int16 data = 0;
+
+        public void Go()
+        {
+            /*
+             * 0--1--2
+             * 3--4--5
+             * 6--7--8
+             */
+
+            while ((data & 7)<8)
+            {
+                while (((data >> 4) & 7) < 8)
+                {
+
+                    if (((data >> 8) & 7) % 3 != (((data >> 12)) & 7) % 3)
+                        Console.WriteLine("{0}--{1}", (data >> 8) & 7, (data >> 12) & 7);
+
+                    //Too ugly:
+                    data = (short)
+                           ((short)(GetBit(data, 3) << 12) +
+                           (short)(GetBit(data, 2) << 8) +
+                           (short)(GetBit(data, 1) + 1) +
+                           (data & 7));
+
+                }
+
+                data++;
+            }
+        }
+
+        private short GetBit(short index)
+        {
+            return (short)(data >> (4 * index) & 7);
+        }
+
+        private short AddBit(byte toadd)
+        {
+            return 
+        }
+
+        //1011,1111,0111,1111
+        //0000,0000,1011,0000
+    }
+}

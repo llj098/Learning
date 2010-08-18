@@ -1,0 +1,5 @@
+D:\项目开发\Learning\books\programming dotnet components\StrongName\bin\Debug\StrongName.dll
+D:\项目开发\Learning\books\programming dotnet components\StrongName\bin\Debug\StrongName.pdb
+D:\项目开发\Learning\books\programming dotnet components\StrongName\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\Learning\books\programming dotnet components\StrongName\obj\Debug\StrongName.dll
+D:\项目开发\Learning\books\programming dotnet components\StrongName\obj\Debug\StrongName.pdb

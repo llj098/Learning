@@ -1,0 +1,15 @@
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\bin\Release\ChapterOne.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\bin\Release\ChapterOne.pdb
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\obj\Release\ResolveAssemblyReference.cache
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\obj\Release\ChapterOne.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\obj\Release\ChapterOne.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\obj\Release\ChapterOne.exe
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\obj\Release\ChapterOne.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\bin\Release\ChapterOne.exe
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\bin\Release\ChapterOne.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\obj\Release\ResolveAssemblyReference.cache
+D:\llj098\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\obj\Release\ChapterOne.exe
+D:\llj098\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\obj\Release\ChapterOne.pdb
+D:\llj098\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\bin\Release\ChapterOne.exe
+D:\llj098\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\bin\Release\ChapterOne.pdb
+D:\llj098\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\obj\Release\ResolveAssemblyReference.cache

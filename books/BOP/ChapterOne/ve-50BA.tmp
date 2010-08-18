@@ -1,0 +1,167 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ChapterOne
+{
+    /// <summary>
+    /// 连连看游戏
+    /// </summary>
+    class LinkUpGame
+    {
+        ///问题描述
+        ///1.14 连连看游戏
+        ///1.如何用简单的计算模型来描述这个问题
+        ///2.怎么判断两个图形是否可以相消？
+        ///3.怎样求出相同形状的图形之间最短路径（绕过格子数最少，路径经过的格子最少）
+        ///4.如何确定死锁状态？如何通过设计算法来去除死锁状态？
+        ///
+
+
+        private int _picCount = 3;//图像种类数量
+        private int _size = 5;
+        //private List<Element> _elements;
+        private ElementCollection _elements;
+        public LinkUpGame(int count,int size, params string[] names)
+        {
+            _picCount = count;
+            _size = size;
+            _elements = new List<Element>(count);
+        }
+
+        private void DrawPixel(List<Element> elements)
+        {
+            throw new NotImplementedException();
+        }
+
+        private List<Element> GenerateElements()
+        {
+            throw new NotImplementedException();
+        }
+
+        private bool Eliminate(Element ele1, Element ele2)//消掉？
+        {
+            throw new NotImplementedException();
+        }
+
+        private List<Element>[] FindStraightLine(Element element)
+        {
+            List<Element> result = new List<Element>();
+
+            bool upFlag = true;
+            bool downFlag = true;
+            bool leftFlag = true;
+            bool rightFlag = true;
+
+            #region X
+
+            #endregion
+            var rightIndex = element.XPosition;
+            var leftIndex = element.XPosition;
+            var upIndex = element.YPosition;
+            var downIndex = element.YPosition;
+
+            while (upFlag || downFlag)
+            {
+                rightIndex++;
+                leftIndex--;
+                if (upFlag)
+                {
+                    if (rightIndex < _size)
+                    {
+                        var ele = _elements.Find(rightIndex, element.YPosition);
+
+                        if (ele != null)
+                            result.Add(ele);
+                        if (ele.Status == ElementStatus.Normal)
+                            upFlag = false;
+                    }
+                    else
+                        upFlag = false;
+                }
+
+                if (downFlag)
+                {
+                    if (leftIndex > 0)
+                    {
+                        var ele = _elements.Find(leftIndex, element.YPosition);
+
+                        if (ele != null)
+                            result.Add(ele);
+                        if (ele.Status == ElementStatus.Normal)
+                            downFlag = false;
+                    }
+                    else
+                        downFlag = false;
+                }
+            }
+
+            while (leftFlag || rightFlag)
+            {
+
+            }
+
+          
+        }
+
+        private void MakeSureNoLock(List<Element> elements)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        public class ElementCollection : ICollection<Element>
+        {
+            Martrix _martrix = new Martrix();
+                        
+            public Element Find(int x, int y)
+            {
+                return _martrix.Get(x, y) as Element;
+            }
+        }
+
+        public class Element
+        {
+            public string Name { get; set; }
+            public int Id { get; set; }
+            public int XPosition { get; set; }
+            public int YPosition { get; set; }
+            public ElementStatus Status { get; set; }
+        }
+
+        public enum ElementStatus
+        {
+            Normal,
+            Eliminated,
+        }
+
+
+        public class Martrix
+        {
+            Dictionary<string, object> _dictionary = new Dictionary<string, object>();
+
+            private string MakeKey(int x,int y)
+            {
+                return x.ToString() + "-" + y.ToString();
+            }
+
+            public void Add(int x, int y,object value)
+            {
+                _dictionary.Add(MakeKey(x, y), value);
+            }
+
+            public Object Get(int x, int y)
+            {
+                object val = new object();
+                _dictionary.TryGetValue(MakeKey(x, y), out val);
+                return val;
+            }
+
+            public void Set(int x, int y, object value)
+            {
+                _dictionary.Add(MakeKey(x, y), value);
+            }
+        }
+    }
+}

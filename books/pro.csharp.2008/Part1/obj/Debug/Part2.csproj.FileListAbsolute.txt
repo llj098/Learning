@@ -1,0 +1,3 @@
+C:\temp\ProCharp2008.Part2.exe
+D:\项目开发\Learning\books\pro.csharp.2008\Part1\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\Learning\books\pro.csharp.2008\Part1\obj\Debug\ProCharp2008.Part2.exe

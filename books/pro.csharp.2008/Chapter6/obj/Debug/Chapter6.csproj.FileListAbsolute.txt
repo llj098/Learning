@@ -1,0 +1,5 @@
+D:\项目开发\Learning\books\pro.csharp.2008\Chapter6\bin\Debug\Chapter6.exe
+D:\项目开发\Learning\books\pro.csharp.2008\Chapter6\bin\Debug\Chapter6.pdb
+D:\项目开发\Learning\books\pro.csharp.2008\Chapter6\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\Learning\books\pro.csharp.2008\Chapter6\obj\Debug\Chapter6.exe
+D:\项目开发\Learning\books\pro.csharp.2008\Chapter6\obj\Debug\Chapter6.pdb

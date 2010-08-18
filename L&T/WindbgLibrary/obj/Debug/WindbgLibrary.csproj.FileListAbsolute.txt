@@ -1,0 +1,5 @@
+D:\项目开发\Learning\L&T\WindbgLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\Learning\L&T\WindbgLibrary\bin\Debug\WindbgLibrary.dll
+D:\项目开发\Learning\L&T\WindbgLibrary\bin\Debug\WindbgLibrary.pdb
+D:\项目开发\Learning\L&T\WindbgLibrary\obj\Debug\WindbgLibrary.dll
+D:\项目开发\Learning\L&T\WindbgLibrary\obj\Debug\WindbgLibrary.pdb

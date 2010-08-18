@@ -1,0 +1,5 @@
+D:\项目开发\Learning\books\programming dotnet components\ProgrammingDotNetComponents\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\Learning\books\programming dotnet components\ProgrammingDotNetComponents\bin\Debug\ProgrammingDotNetComponents.exe
+D:\项目开发\Learning\books\programming dotnet components\ProgrammingDotNetComponents\bin\Debug\ProgrammingDotNetComponents.pdb
+D:\项目开发\Learning\books\programming dotnet components\ProgrammingDotNetComponents\obj\Debug\ProgrammingDotNetComponents.exe
+D:\项目开发\Learning\books\programming dotnet components\ProgrammingDotNetComponents\obj\Debug\ProgrammingDotNetComponents.pdb

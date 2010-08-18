@@ -1,0 +1,14 @@
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\bin\Release\Tests.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\bin\Release\Tests.pdb
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\obj\Release\ResolveAssemblyReference.cache
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\obj\Release\Tests.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\obj\Release\Tests.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\obj\Release\Tests.exe
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\obj\Release\Tests.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\bin\Release\Tests.exe
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\bin\Release\Tests.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\bin\Release\TestsLib.dll
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\bin\Release\TestsLib.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\bin\Release\Common.dll
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Tests\bin\Release\Common.pdb

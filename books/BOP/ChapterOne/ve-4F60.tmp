@@ -1,0 +1,95 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ChapterOne
+{
+    /// <summary>
+    /// 连连看游戏
+    /// </summary>
+    class LinkUpGame
+    {
+        ///问题描述
+        ///1.14 连连看游戏
+        ///1.如何用简单的计算模型来描述这个问题
+        ///2.怎么判断两个图形是否可以相消？
+        ///3.怎样求出相同形状的图形之间最短路径（绕过格子数最少，路径经过的格子最少）
+        ///4.如何确定死锁状态？如何通过设计算法来去除死锁状态？
+        ///
+
+
+        private int _picCount = 3;//图像种类数量
+        private int _size = 5;
+        private List<Element> _elements;
+        public LinkUpGame(int count,int size, params string[] names)
+        {
+            _picCount = count;
+            _size = size;
+            _elements = new List<Element>(count);
+        }
+
+        private void DrawPixel(List<Element> elements)
+        {
+            throw new NotImplementedException();
+        }
+
+        private List<Element> GenerateElements()
+        {
+            throw new NotImplementedException();
+        }
+
+        private bool Eliminate(Element ele1, Element ele2)//消掉？
+        {
+            throw new NotImplementedException();
+        }
+
+        private List<Element>[] FindStraightLine(Element element)
+        {
+            List<Element> result = new List<Element>();
+            //第一个元素返回直接到达的图片
+            //第二个元素返回到达的空位
+            List<Element>[] elements = new List<Element>[2];
+
+            //x轴上方查找
+            for (int i = element.XPosition; i < _size ; i++)
+            {
+                
+            }
+            //x轴下方查找
+
+            foreach (Element item in _elements)
+            {
+                
+            }
+            throw new NotImplementedException();
+            
+        }
+
+        private void MakeSureNoLock(List<Element> elements)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        public class ElementCollection
+        {
+
+        }
+
+        public class Element
+        {
+            public string Name { get; set; }
+            public int Id { get; set; }
+            public int XPosition { get; set; }
+            public int YPosition { get; set; }
+            public ElementStatus Status { get; set; }
+        }
+
+        public enum ElementStatus
+        {
+            Normal,
+            Eliminated,
+        }
+    }
+}

@@ -1,0 +1,11 @@
+D:\项目开发\Learning\ProCSharp2008\ProCSharp2008\FunWithStructure\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\Learning\ProCSharp2008\ProCSharp2008\FunWithStructure\bin\Debug\FunWithStructure.exe
+D:\项目开发\Learning\ProCSharp2008\ProCSharp2008\FunWithStructure\bin\Debug\FunWithStructure.pdb
+D:\项目开发\Learning\ProCSharp2008\ProCSharp2008\FunWithStructure\obj\Debug\FunWithStructure.exe
+D:\项目开发\Learning\ProCSharp2008\ProCSharp2008\FunWithStructure\obj\Debug\FunWithStructure.pdb
+D:\项目开发\Learning\books\pro.csharp.2008\FunWithStructure\obj\Debug\FunWithStructure.exe
+D:\项目开发\Learning\books\pro.csharp.2008\FunWithStructure\obj\Debug\FunWithStructure.pdb
+E:\llj098\Mesh\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\obj\Debug\FunWithStructure.exe
+E:\llj098\Mesh\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\obj\Debug\FunWithStructure.pdb
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\obj\Debug\FunWithStructure.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\obj\Debug\FunWithStructure.pdb

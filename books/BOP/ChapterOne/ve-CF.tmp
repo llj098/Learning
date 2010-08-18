@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ChapterOne
+{
+    /// <summary>
+    /// 象棋将帅问题
+    /// </summary>
+    class ChessBoss
+    {
+        ///编程之美，象棋将帅问题：
+        ///题目要求：
+        ///1.输出所有的将帅合法位置
+        ///2.只能运用一个变量
+        ///
+
+
+        ///唯一的一个变量，用于表示合法位置，以及临时变量等等 
+        ///共16位，前两个四位表示两个棋子的位置坐标，
+        ///后两个四位表示两个循环的循环变量
+        Int16 data = Int16.MaxValue;
+
+        public void Go()
+        {
+            //两层遍历：
+      
+
+
+            Int16 temp = (short)(data >> 12);
+            temp = 7;
+            data &= (short)(temp << 12);
+            Console.WriteLine(data >> 12);
+            while ((data & 7)<8)
+            {
+                while ( ( (data >> 4) & 7) < 8)
+                {
+
+
+                }
+
+                data++;
+            }
+
+        }
+
+
+    }
+}

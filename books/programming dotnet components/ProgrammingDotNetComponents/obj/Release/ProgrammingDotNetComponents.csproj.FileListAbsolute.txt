@@ -1,0 +1,10 @@
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\ProgrammingDotNetComponents\bin\Release\ProgrammingDotNetComponents.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\ProgrammingDotNetComponents\bin\Release\ProgrammingDotNetComponents.pdb
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\ProgrammingDotNetComponents\obj\Release\ResolveAssemblyReference.cache
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\ProgrammingDotNetComponents\obj\Release\ProgrammingDotNetComponents.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\ProgrammingDotNetComponents\obj\Release\ProgrammingDotNetComponents.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\ProgrammingDotNetComponents\bin\Release\ProgrammingDotNetComponents.exe
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\ProgrammingDotNetComponents\bin\Release\ProgrammingDotNetComponents.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\ProgrammingDotNetComponents\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\ProgrammingDotNetComponents\obj\Release\ProgrammingDotNetComponents.exe
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\ProgrammingDotNetComponents\obj\Release\ProgrammingDotNetComponents.pdb

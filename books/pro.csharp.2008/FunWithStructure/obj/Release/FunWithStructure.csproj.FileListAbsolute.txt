@@ -1,0 +1,10 @@
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\bin\Release\FunWithStructure.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\bin\Release\FunWithStructure.pdb
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\obj\Release\ResolveAssemblyReference.cache
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\obj\Release\FunWithStructure.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\obj\Release\FunWithStructure.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\bin\Release\FunWithStructure.exe
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\bin\Release\FunWithStructure.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\obj\Release\FunWithStructure.exe
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithStructure\obj\Release\FunWithStructure.pdb

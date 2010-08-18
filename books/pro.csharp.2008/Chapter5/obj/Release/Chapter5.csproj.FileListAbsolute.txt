@@ -1,0 +1,10 @@
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\Chapter5\bin\Release\Chapter5.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\Chapter5\bin\Release\Chapter5.pdb
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\Chapter5\obj\Release\ResolveAssemblyReference.cache
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\Chapter5\obj\Release\Chapter5.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\Chapter5\obj\Release\Chapter5.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\Chapter5\bin\Release\Chapter5.exe
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\Chapter5\bin\Release\Chapter5.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\Chapter5\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\Chapter5\obj\Release\Chapter5.exe
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\Chapter5\obj\Release\Chapter5.pdb

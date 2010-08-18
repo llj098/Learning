@@ -1,0 +1,8 @@
+E:\llj098\Mesh\llj098\Codes\Learning\L&T\BlogExport\obj\Debug\ResolveAssemblyReference.cache
+E:\llj098\Mesh\llj098\Codes\Learning\L&T\BlogExport\obj\Debug\BlogExport.Form1.resources
+E:\llj098\Mesh\llj098\Codes\Learning\L&T\BlogExport\obj\Debug\BlogExport.Properties.Resources.resources
+E:\llj098\Mesh\llj098\Codes\Learning\L&T\BlogExport\obj\Debug\BlogExport.csproj.GenerateResource.Cache
+E:\llj098\Mesh\llj098\Codes\Learning\L&T\BlogExport\bin\Debug\BlogExport.exe
+E:\llj098\Mesh\llj098\Codes\Learning\L&T\BlogExport\bin\Debug\BlogExport.pdb
+E:\llj098\Mesh\llj098\Codes\Learning\L&T\BlogExport\obj\Debug\BlogExport.exe
+E:\llj098\Mesh\llj098\Codes\Learning\L&T\BlogExport\obj\Debug\BlogExport.pdb

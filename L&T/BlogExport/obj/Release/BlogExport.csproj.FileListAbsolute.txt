@@ -1,0 +1,16 @@
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\bin\Release\BlogExport.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\bin\Release\BlogExport.pdb
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\obj\Release\ResolveAssemblyReference.cache
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\obj\Release\BlogExport.Form1.resources
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\obj\Release\BlogExport.Properties.Resources.resources
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\obj\Release\BlogExport.csproj.GenerateResource.Cache
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\obj\Release\BlogExport.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\obj\Release\BlogExport.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\bin\Release\BlogExport.exe
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\bin\Release\BlogExport.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\obj\Release\BlogExport.Form1.resources
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\obj\Release\BlogExport.Properties.Resources.resources
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\obj\Release\BlogExport.csproj.GenerateResource.Cache
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\obj\Release\BlogExport.exe
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\BlogExport\obj\Release\BlogExport.pdb

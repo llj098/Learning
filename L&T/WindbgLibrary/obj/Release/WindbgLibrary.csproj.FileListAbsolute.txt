@@ -1,0 +1,6 @@
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\WindbgLibrary\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\WindbgLibrary\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\WindbgLibrary\bin\Release\WindbgLibrary.dll
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\WindbgLibrary\bin\Release\WindbgLibrary.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\WindbgLibrary\obj\Release\WindbgLibrary.dll
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\WindbgLibrary\obj\Release\WindbgLibrary.pdb

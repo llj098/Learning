@@ -1,0 +1,10 @@
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\StrongName\bin\Release\StrongName.dll
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\StrongName\bin\Release\StrongName.pdb
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\StrongName\obj\Release\ResolveAssemblyReference.cache
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\StrongName\obj\Release\StrongName.dll
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\StrongName\obj\Release\StrongName.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\StrongName\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\StrongName\obj\Release\StrongName.dll
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\StrongName\obj\Release\StrongName.pdb
+E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\StrongName\bin\Release\StrongName.dll
+E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\StrongName\bin\Release\StrongName.pdb

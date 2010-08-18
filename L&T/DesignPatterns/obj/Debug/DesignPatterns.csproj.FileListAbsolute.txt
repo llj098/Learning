@@ -1,0 +1,5 @@
+D:\项目开发\Learning\L&T\DesignPatterns\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\Learning\L&T\DesignPatterns\bin\Debug\DesignPatterns.exe
+D:\项目开发\Learning\L&T\DesignPatterns\bin\Debug\DesignPatterns.pdb
+D:\项目开发\Learning\L&T\DesignPatterns\obj\Debug\DesignPatterns.exe
+D:\项目开发\Learning\L&T\DesignPatterns\obj\Debug\DesignPatterns.pdb

@@ -1,0 +1,5 @@
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\bin\Debug\ChapterOne.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\bin\Debug\ChapterOne.pdb
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\obj\Debug\ChapterOne.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\books\BOP\ChapterOne\obj\Debug\ChapterOne.pdb

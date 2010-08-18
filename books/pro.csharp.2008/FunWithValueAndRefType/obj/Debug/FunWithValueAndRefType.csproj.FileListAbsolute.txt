@@ -1,0 +1,10 @@
+D:\项目开发\Learning\ProCSharp2008\ProCSharp2008\FunWithValueAndRefType\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\Learning\ProCSharp2008\ProCSharp2008\FunWithValueAndRefType\bin\Debug\FunWithValueAndRefType.exe
+D:\项目开发\Learning\ProCSharp2008\ProCSharp2008\FunWithValueAndRefType\bin\Debug\FunWithValueAndRefType.pdb
+D:\项目开发\Learning\ProCSharp2008\ProCSharp2008\FunWithValueAndRefType\obj\Debug\FunWithValueAndRefType.exe
+D:\项目开发\Learning\ProCSharp2008\ProCSharp2008\FunWithValueAndRefType\obj\Debug\FunWithValueAndRefType.pdb
+D:\项目开发\Learning\books\pro.csharp.2008\FunWithValueAndRefType\bin\Debug\FunWithValueAndRefType.exe
+D:\项目开发\Learning\books\pro.csharp.2008\FunWithValueAndRefType\bin\Debug\FunWithValueAndRefType.pdb
+D:\项目开发\Learning\books\pro.csharp.2008\FunWithValueAndRefType\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\Learning\books\pro.csharp.2008\FunWithValueAndRefType\obj\Debug\FunWithValueAndRefType.exe
+D:\项目开发\Learning\books\pro.csharp.2008\FunWithValueAndRefType\obj\Debug\FunWithValueAndRefType.pdb

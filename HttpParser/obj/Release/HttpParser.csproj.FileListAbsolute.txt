@@ -1,0 +1,5 @@
+E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\HttpParser\bin\Release\HttpParser.exe
+E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\HttpParser\bin\Release\HttpParser.pdb
+E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\HttpParser\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\HttpParser\obj\Release\HttpParser.exe
+E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\HttpParser\obj\Release\HttpParser.pdb

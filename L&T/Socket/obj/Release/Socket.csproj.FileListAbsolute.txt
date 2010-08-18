@@ -1,0 +1,10 @@
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\Socket\bin\Release\Socket.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\Socket\bin\Release\Socket.pdb
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\Socket\obj\Release\ResolveAssemblyReference.cache
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\Socket\obj\Release\Socket.exe
+D:\My Documents\My Dropbox\Codes\llj098\Codes\Learning\L&T\Socket\obj\Release\Socket.pdb
+E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Socket\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Socket\bin\Release\SocketTest.exe
+E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Socket\bin\Release\SocketTest.pdb
+E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Socket\obj\Release\SocketTest.exe
+E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Socket\obj\Release\SocketTest.pdb
