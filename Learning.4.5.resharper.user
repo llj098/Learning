@@ -1,0 +1,48 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="BEB52F2D-B102-4579-AFFF-A4ECD82CCF7B/f:Program.cs" caret="0" fromTop="0" />
+      <File id="4CD25902-0E33-4DFF-B3DC-37F4F3EE7AE3/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
+      <File id="4CD25902-0E33-4DFF-B3DC-37F4F3EE7AE3/f:Program.cs" caret="0" fromTop="0" />
+      <File id="560C4F0C-D912-4DC2-BE80-9E52547E6C24/f:Program.cs" caret="224" fromTop="11" />
+      <File id="560C4F0C-D912-4DC2-BE80-9E52547E6C24/d:Properties/f:AssemblyInfo.cs" caret="107" fromTop="4" />
+      <File id="94860D5D-3A33-4EE1-8598-7E670C535EA8/d:Properties/f:AssemblyInfo.cs" caret="107" fromTop="4" />
+      <File id="94860D5D-3A33-4EE1-8598-7E670C535EA8/f:Program.cs" caret="92" fromTop="5" />
+      <File id="BEC31378-91FF-48D3-A070-29BCCD0D54EA/f:Shadow.cs" caret="92" fromTop="5" />
+      <File id="BEC31378-91FF-48D3-A070-29BCCD0D54EA/d:Properties/f:AssemblyInfo.cs" caret="107" fromTop="4" />
+      <File id="BEC31378-91FF-48D3-A070-29BCCD0D54EA/f:Program.cs" caret="92" fromTop="5" />
+      <File id="BEC31378-91FF-48D3-A070-29BCCD0D54EA/f:NestedType.cs" caret="92" fromTop="5" />
+      <File id="57A2BC4E-5BAE-4426-8C03-4C0E6E4809E7/f:StaticType.cs" caret="92" fromTop="5" />
+      <File id="57A2BC4E-5BAE-4426-8C03-4C0E6E4809E7/d:Properties/f:AssemblyInfo.cs" caret="107" fromTop="4" />
+      <File id="57A2BC4E-5BAE-4426-8C03-4C0E6E4809E7/f:Program.cs" caret="92" fromTop="5" />
+      <File id="57A2BC4E-5BAE-4426-8C03-4C0E6E4809E7/f:NestedType.cs" caret="92" fromTop="5" />
+      <File id="57A2BC4E-5BAE-4426-8C03-4C0E6E4809E7/f:ConstructorChain.cs" caret="92" fromTop="5" />
+      <File id="BEB52F2D-B102-4579-AFFF-A4ECD82CCF7B/d:Properties/f:AssemblyInfo.cs" caret="107" fromTop="4" />
+      <File id="560C4F0C-D912-4DC2-BE80-9E52547E6C24/d:Chapter13/f:PartialMethod.cs" caret="376" fromTop="19" />
+      <File id="560C4F0C-D912-4DC2-BE80-9E52547E6C24/d:Chapter8/f:GC.cs" caret="855" fromTop="26" />
+      <File id="560C4F0C-D912-4DC2-BE80-9E52547E6C24/d:Chapter13/f:CSharp08LangFeature.cs" caret="158" fromTop="7" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="560C4F0C-D912-4DC2-BE80-9E52547E6C24/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
+      <File id="560C4F0C-D912-4DC2-BE80-9E52547E6C24/f:Program.cs" caret="629" fromTop="21" />
+      <File id="560C4F0C-D912-4DC2-BE80-9E52547E6C24/f:Program.cs" caret="129" fromTop="6" />
+      <File id="560C4F0C-D912-4DC2-BE80-9E52547E6C24/f:Program.cs" caret="146" fromTop="7" />
+      <File id="560C4F0C-D912-4DC2-BE80-9E52547E6C24/d:Chapter13/f:CSharp08LangFeature.cs" caret="280" fromTop="13" />
+      <File id="560C4F0C-D912-4DC2-BE80-9E52547E6C24/d:Chapter13/f:CSharp08LangFeature.cs" caret="280" fromTop="12" />
+      <File id="560C4F0C-D912-4DC2-BE80-9E52547E6C24/d:Chapter13/f:CSharp08LangFeature.cs" caret="221" fromTop="9" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+</Configuration>
