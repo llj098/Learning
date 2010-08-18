@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace HttpParser
 {
-    abstract class DFA<Token,Function>
+    public abstract class DFA<Token,Function>
     {
         protected static DFAState<Token, Function>[] States;
         protected int OldState;
@@ -90,12 +90,14 @@ namespace HttpParser
         End = 3,
     }
 
-    abstract class DFAState<Token,Function>
+	public abstract class DFAState<Token,Function>
     {
-        public int ID { get; private set; }
+        public int ID;
         public bool IsQuitState { get; set; }
         protected Dictionary<int,int> NextStates;
-
+		protected Function Func;
+		public bool NoFunction;
+		
         public DFAState(int id)
         {
             ID = id;
@@ -125,6 +127,6 @@ namespace HttpParser
             return ret;
         }
 
-        public abstract void StateFunc(int action,DFA<Token,Function)
+        public abstract void StateFunc(int action,DFA<Token,Function> dfa);
     }
 }
