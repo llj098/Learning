@@ -3,3 +3,8 @@ E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\TestsLib\bin\Releas
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\TestsLib\obj\Release\ResolveAssemblyReference.cache
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\TestsLib\obj\Release\TestsLib.dll
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\TestsLib\obj\Release\TestsLib.pdb
+E:\llj098\Learning\Learning\L&T\TestsLib\bin\Release\TestsLib.dll
+E:\llj098\Learning\Learning\L&T\TestsLib\bin\Release\TestsLib.pdb
+E:\llj098\Learning\Learning\L&T\TestsLib\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Learning\Learning\L&T\TestsLib\obj\Release\TestsLib.dll
+E:\llj098\Learning\Learning\L&T\TestsLib\obj\Release\TestsLib.pdb

@@ -8,3 +8,8 @@ E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\C
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\Chapter6\obj\Release\ResolveAssemblyReference.cache
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\Chapter6\obj\Release\Chapter6.exe
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\Chapter6\obj\Release\Chapter6.pdb
+E:\llj098\Learning\Learning\books\pro.csharp.2008\Chapter6\bin\Release\Chapter6.exe
+E:\llj098\Learning\Learning\books\pro.csharp.2008\Chapter6\bin\Release\Chapter6.pdb
+E:\llj098\Learning\Learning\books\pro.csharp.2008\Chapter6\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Learning\Learning\books\pro.csharp.2008\Chapter6\obj\Release\Chapter6.exe
+E:\llj098\Learning\Learning\books\pro.csharp.2008\Chapter6\obj\Release\Chapter6.pdb

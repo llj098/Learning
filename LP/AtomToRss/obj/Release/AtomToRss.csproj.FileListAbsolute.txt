@@ -14,3 +14,11 @@ E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\LP\AtomToRss\obj\Releas
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\LP\AtomToRss\obj\Release\AtomToRss.Form1.resources
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\LP\AtomToRss\obj\Release\AtomToRss.Properties.Resources.resources
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\LP\AtomToRss\obj\Release\AtomToRss.csproj.GenerateResource.Cache
+E:\llj098\Learning\Learning\LP\AtomToRss\bin\Release\AtomToRss.exe
+E:\llj098\Learning\Learning\LP\AtomToRss\bin\Release\AtomToRss.pdb
+E:\llj098\Learning\Learning\LP\AtomToRss\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Learning\Learning\LP\AtomToRss\obj\Release\AtomToRss.Form1.resources
+E:\llj098\Learning\Learning\LP\AtomToRss\obj\Release\AtomToRss.Properties.Resources.resources
+E:\llj098\Learning\Learning\LP\AtomToRss\obj\Release\AtomToRss.csproj.GenerateResource.Cache
+E:\llj098\Learning\Learning\LP\AtomToRss\obj\Release\AtomToRss.exe
+E:\llj098\Learning\Learning\LP\AtomToRss\obj\Release\AtomToRss.pdb

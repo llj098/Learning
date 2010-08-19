@@ -8,3 +8,8 @@ E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotne
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\StrongName\obj\Release\StrongName.pdb
 E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\StrongName\bin\Release\StrongName.dll
 E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\programming dotnet components\StrongName\bin\Release\StrongName.pdb
+E:\llj098\Learning\Learning\books\programming dotnet components\StrongName\bin\Release\StrongName.dll
+E:\llj098\Learning\Learning\books\programming dotnet components\StrongName\bin\Release\StrongName.pdb
+E:\llj098\Learning\Learning\books\programming dotnet components\StrongName\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Learning\Learning\books\programming dotnet components\StrongName\obj\Release\StrongName.dll
+E:\llj098\Learning\Learning\books\programming dotnet components\StrongName\obj\Release\StrongName.pdb

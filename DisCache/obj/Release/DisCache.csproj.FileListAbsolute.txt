@@ -3,3 +3,8 @@ E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\DisCache\bin\Release\Di
 E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\DisCache\obj\Release\ResolveAssemblyReference.cache
 E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\DisCache\obj\Release\DisCache.exe
 E:\llj098\dropbox\My Dropbox\Codes\llj098\Codes\Learning\DisCache\obj\Release\DisCache.pdb
+E:\llj098\Learning\Learning\DisCache\bin\Release\DisCache.exe
+E:\llj098\Learning\Learning\DisCache\bin\Release\DisCache.pdb
+E:\llj098\Learning\Learning\DisCache\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Learning\Learning\DisCache\obj\Release\DisCache.exe
+E:\llj098\Learning\Learning\DisCache\obj\Release\DisCache.pdb

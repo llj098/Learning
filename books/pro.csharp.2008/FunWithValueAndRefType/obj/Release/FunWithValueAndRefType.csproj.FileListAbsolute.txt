@@ -8,3 +8,8 @@ E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\F
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithValueAndRefType\obj\Release\ResolveAssemblyReference.cache
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithValueAndRefType\obj\Release\FunWithValueAndRefType.exe
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\books\pro.csharp.2008\FunWithValueAndRefType\obj\Release\FunWithValueAndRefType.pdb
+E:\llj098\Learning\Learning\books\pro.csharp.2008\FunWithValueAndRefType\bin\Release\FunWithValueAndRefType.exe
+E:\llj098\Learning\Learning\books\pro.csharp.2008\FunWithValueAndRefType\bin\Release\FunWithValueAndRefType.pdb
+E:\llj098\Learning\Learning\books\pro.csharp.2008\FunWithValueAndRefType\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Learning\Learning\books\pro.csharp.2008\FunWithValueAndRefType\obj\Release\FunWithValueAndRefType.exe
+E:\llj098\Learning\Learning\books\pro.csharp.2008\FunWithValueAndRefType\obj\Release\FunWithValueAndRefType.pdb

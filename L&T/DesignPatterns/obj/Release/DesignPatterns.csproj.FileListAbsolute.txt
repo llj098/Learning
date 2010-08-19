@@ -8,3 +8,8 @@ E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\DesignPatterns\bin\
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\DesignPatterns\obj\Release\ResolveAssemblyReference.cache
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\DesignPatterns\obj\Release\DesignPatterns.exe
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\DesignPatterns\obj\Release\DesignPatterns.pdb
+E:\llj098\Learning\Learning\L&T\DesignPatterns\bin\Release\DesignPatterns.exe
+E:\llj098\Learning\Learning\L&T\DesignPatterns\bin\Release\DesignPatterns.pdb
+E:\llj098\Learning\Learning\L&T\DesignPatterns\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Learning\Learning\L&T\DesignPatterns\obj\Release\DesignPatterns.exe
+E:\llj098\Learning\Learning\L&T\DesignPatterns\obj\Release\DesignPatterns.pdb

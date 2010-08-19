@@ -3,3 +3,8 @@ E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Common\bin\Release\
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Common\bin\Release\Common.pdb
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Common\obj\Release\Common.dll
 E:\llj098\Dropbox\My Dropbox\Codes\llj098\Codes\Learning\L&T\Common\obj\Release\Common.pdb
+E:\llj098\Learning\Learning\L&T\Common\bin\Release\Common.dll
+E:\llj098\Learning\Learning\L&T\Common\bin\Release\Common.pdb
+E:\llj098\Learning\Learning\L&T\Common\obj\Release\ResolveAssemblyReference.cache
+E:\llj098\Learning\Learning\L&T\Common\obj\Release\Common.dll
+E:\llj098\Learning\Learning\L&T\Common\obj\Release\Common.pdb
