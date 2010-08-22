@@ -5,3 +5,4 @@ D:\项目开发\Learning\L&T\Socket\obj\Debug\Socket.exe
 D:\项目开发\Learning\L&T\Socket\obj\Debug\Socket.pdb
 E:\llj098\Mesh\llj098\Codes\Learning\L&T\Socket\obj\Debug\Socket.exe
 E:\llj098\Mesh\llj098\Codes\Learning\L&T\Socket\obj\Debug\Socket.pdb
+E:\llj098\Learning\Learning\L&T\Socket\obj\Debug\ResolveAssemblyReference.cache

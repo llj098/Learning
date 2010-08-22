@@ -24,6 +24,7 @@ namespace HttpParser
         HEX,
         TOKEN,
         SEPARATORS,
+        Colon,
         COMMENT,
         CTEXT,
         QUOTEDSTRING,

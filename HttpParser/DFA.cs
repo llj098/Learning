@@ -28,7 +28,8 @@ namespace HttpParser
             CurrentToken = token;
             OldState = CurrentState;
 
-            CurrentState = States[CurrentState].NextState(action);
+            bool isElse;
+            CurrentState = States[CurrentState].NextState(action, out isElse);
 
             if (CurrentState < 0) {
                 CurrentState = 0;
@@ -40,10 +41,14 @@ namespace HttpParser
             }
 
             if (!States[CurrentState].NoFunction) {
-                States[CurrentState].StateFunc(action, this);
+                States[CurrentState].HandleState(action, this);
             }
 
             if (States[CurrentState].IsQuitState) {
+                CurrentState = 0;
+                if (isElse) {
+                    return DFAResult.ElseQuit;
+                }
                 return DFAResult.Quit;
             }
             else {
@@ -81,8 +86,6 @@ namespace HttpParser
         }
 
         protected abstract void Init();
-
-        protected abstract void HandleFunction(int action,DFA<Token,Function> dfa);
     }
 
     public class DFAException : Exception
@@ -139,15 +142,21 @@ namespace HttpParser
             ElseStateId = id;
         }
 
-        public int NextState(int action)
+        public int NextState(int action,out bool isElseAction)
         {
             int ret = -1;
-            if (NextStates.TryGetValue(action, out ret))
-                return ret;
-            else
-                return ElseStateId;
+
+            if (NextStates.TryGetValue(action, out ret)) {
+                isElseAction = false;
+            }
+            else {
+                isElseAction = true;
+                ret = ElseStateId;
+            }
+
+            return ret;
         }
 
-        public abstract void StateFunc(int action,DFA<Token,Function> dfa);
+        public abstract void HandleState(int action,DFA<Token,Function> dfa);
     }
 }

@@ -1,0 +1,5 @@
+E:\llj098\Learning\Learning\DisCache\bin\Debug\DisCache.exe
+E:\llj098\Learning\Learning\DisCache\bin\Debug\DisCache.pdb
+E:\llj098\Learning\Learning\DisCache\obj\Debug\ResolveAssemblyReference.cache
+E:\llj098\Learning\Learning\DisCache\obj\Debug\DisCache.exe
+E:\llj098\Learning\Learning\DisCache\obj\Debug\DisCache.pdb

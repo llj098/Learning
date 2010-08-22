@@ -3,3 +3,5 @@ D:\项目开发\Learning\L&T\Tests\bin\Debug\Tests.pdb
 D:\项目开发\Learning\L&T\Tests\obj\Debug\ResolveAssemblyReference.cache
 D:\项目开发\Learning\L&T\Tests\obj\Debug\Tests.exe
 D:\项目开发\Learning\L&T\Tests\obj\Debug\Tests.pdb
+E:\llj098\Learning\Learning\L&T\Tests\obj\Debug\ResolveAssemblyReference.cache
+E:\llj098\Learning\Learning\L&T\Tests\obj\Debug\Tests.exe

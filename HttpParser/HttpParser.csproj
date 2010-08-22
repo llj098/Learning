@@ -45,8 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BNF\Sentence.cs" />
     <Compile Include="BNF\RequestHeadersState.cs" />
-    <Compile Include="BNF\RequestLineState.cs" />
+    <Compile Include="BNF\RequestLineTokens.cs" />
     <Compile Include="BNF\RequestPacketState.cs" />
     <Compile Include="CodeTimer.cs" />
     <Compile Include="DFA.cs" />
@@ -55,7 +56,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Symbols.cs" />
-    <Compile Include="Syntax.cs" />
+    <Compile Include="BNF\Tokens.cs" />
+    <Compile Include="SyntaxToken.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
