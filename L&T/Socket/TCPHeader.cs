@@ -2,40 +2,63 @@ using System.Net;
 using System.Text;
 using System;
 using System.IO;
-using System.Windows.Forms;
 
-namespace MJsniffer
+namespace SocketTest
 {
+    //THIS CLASS THANKS TO http://www.codeproject.com/KB/IP/CSNetworkSniffer.aspx
     public class TCPHeader
     {
+        /*
+         * FROM http://www.faqs.org/rfcs/rfc793.html
+         * 
+            0             1               2               3   
+            0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+           |          Source Port          |       Destination Port        |
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+           |                        Sequence Number                        |
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+           |                    Acknowledgment Number                      |
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+           |  Data |           |U|A|P|R|S|F|                               |
+           | Offset| Reserved  |R|C|S|S|Y|I|            Window             |
+           |       |           |G|K|H|T|N|N|                               |
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+           |           Checksum            |         Urgent Pointer        |
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+           |                    Options                    |    Padding    |
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+           |                             data                              |
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                 * *
+         */
         //TCP header fields
         private ushort usSourcePort;              //Sixteen bits for the source port number
         private ushort usDestinationPort;         //Sixteen bits for the destination port number
-        private uint   uiSequenceNumber=555;          //Thirty two bits for the sequence number
-        private uint   uiAcknowledgementNumber=555;   //Thirty two bits for the acknowledgement number
-        private ushort usDataOffsetAndFlags=555;      //Sixteen bits for flags and data offset
-        private ushort usWindow=555;                  //Sixteen bits for the window size
-        private short  sChecksum=555;                 //Sixteen bits for the checksum
-                                                    //(checksum can be negative so taken as short)
+        private uint uiSequenceNumber = 555;          //Thirty two bits for the sequence number
+        private uint uiAcknowledgementNumber = 555;   //Thirty two bits for the acknowledgement number
+        private ushort usDataOffsetAndFlags = 555;      //Sixteen bits for flags and data offset
+        private ushort usWindow = 555;                  //Sixteen bits for the window size
+        private short sChecksum = 555;                 //Sixteen bits for the checksum
+        //(checksum can be negative so taken as short)
         private ushort usUrgentPointer;           //Sixteen bits for the urgent pointer
         //End TCP header fields
 
-        private byte   byHeaderLength;            //Header length
+        private byte byHeaderLength;            //Header length
         private ushort usMessageLength;           //Length of the data being carried
         private byte[] byTCPData = new byte[4096];//Data carried by the TCP packet
-       
-        public TCPHeader(byte [] byBuffer, int nReceived)
+
+        public TCPHeader(byte[] byBuffer, int nReceived)
         {
-            try
-            {
+            try {
                 MemoryStream memoryStream = new MemoryStream(byBuffer, 0, nReceived);
                 BinaryReader binaryReader = new BinaryReader(memoryStream);
-           
+
                 //The first sixteen bits contain the source port
-                usSourcePort = (ushort)IPAddress.NetworkToHostOrder(binaryReader.ReadInt16 ());
+                usSourcePort = (ushort)IPAddress.NetworkToHostOrder(binaryReader.ReadInt16());
 
                 //The next sixteen contain the destiination port
-                usDestinationPort = (ushort)IPAddress.NetworkToHostOrder(binaryReader.ReadInt16 ());
+                usDestinationPort = (ushort)IPAddress.NetworkToHostOrder(binaryReader.ReadInt16());
 
                 //Next thirty two have the sequence number
                 uiSequenceNumber = (uint)IPAddress.NetworkToHostOrder(binaryReader.ReadInt32());
@@ -66,9 +89,8 @@ namespace MJsniffer
                 //Copy the TCP data into the data buffer
                 Array.Copy(byBuffer, byHeaderLength, byTCPData, 0, nReceived - byHeaderLength);
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "MJsniff TCP" + (nReceived), MessageBoxButtons.OK, MessageBoxIcon.Error);
+            catch (Exception ex) {
+                //MessageBox.Show(ex.Message, "MJsniff TCP" + (nReceived), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -84,7 +106,7 @@ namespace MJsniffer
         {
             get
             {
-                return usDestinationPort.ToString ();
+                return usDestinationPort.ToString();
             }
         }
 
@@ -103,8 +125,7 @@ namespace MJsniffer
                 //If the ACK flag is set then only we have a valid value in
                 //the acknowlegement field, so check for it beore returning 
                 //anything
-                if ((usDataOffsetAndFlags & 0x10) != 0)
-                {
+                if ((usDataOffsetAndFlags & 0x10) != 0) {
                     return uiAcknowledgementNumber.ToString();
                 }
                 else
@@ -135,8 +156,7 @@ namespace MJsniffer
                 //If the URG flag is set then only we have a valid value in
                 //the urgent pointer field, so check for it beore returning 
                 //anything
-                if ((usDataOffsetAndFlags & 0x20) != 0)
-                {
+                if ((usDataOffsetAndFlags & 0x20) != 0) {
                     return usUrgentPointer.ToString();
                 }
                 else
@@ -153,42 +173,34 @@ namespace MJsniffer
 
                 //First we extract the flags
                 int nFlags = usDataOffsetAndFlags & 0x3F;
- 
-                string strFlags = string.Format ("0x{0:x2} (", nFlags);
+
+                string strFlags = string.Format("0x{0:x2} (", nFlags);
 
                 //Now we start looking whether individual bits are set or not
-                if ((nFlags & 0x01) != 0)
-                {
+                if ((nFlags & 0x01) != 0) {
                     strFlags += "FIN, ";
                 }
-                if ((nFlags & 0x02) != 0)
-                {
+                if ((nFlags & 0x02) != 0) {
                     strFlags += "SYN, ";
                 }
-                if ((nFlags & 0x04) != 0)
-                {
+                if ((nFlags & 0x04) != 0) {
                     strFlags += "RST, ";
                 }
-                if ((nFlags & 0x08) != 0)
-                {
+                if ((nFlags & 0x08) != 0) {
                     strFlags += "PSH, ";
                 }
-                if ((nFlags & 0x10) != 0)
-                {
+                if ((nFlags & 0x10) != 0) {
                     strFlags += "ACK, ";
                 }
-                if ((nFlags & 0x20) != 0)
-                {
+                if ((nFlags & 0x20) != 0) {
                     strFlags += "URG";
                 }
                 strFlags += ")";
 
-                if (strFlags.Contains("()"))
-                {
+                if (strFlags.Contains("()")) {
                     strFlags = strFlags.Remove(strFlags.Length - 3);
                 }
-                else if (strFlags.Contains(", )"))
-                {
+                else if (strFlags.Contains(", )")) {
                     strFlags = strFlags.Remove(strFlags.Length - 3, 2);
                 }
 

@@ -2,9 +2,8 @@ using System.Net;
 using System.Text;
 using System;
 using System.IO;
-using System.Windows.Forms;
 
-namespace MJsniffer
+namespace SocketTest
 {
     public class UDPHeader
     {

@@ -2,35 +2,61 @@ using System.Net;
 using System.Text;
 using System;
 using System.IO;
-using System.Windows.Forms;
 
-namespace MJsniffer
+namespace SocketTest
 {
+    public enum Protocol
+    {
+        TCP = 6,
+        UDP = 17,
+        Unknown = -1
+    }
+
+    //** This class is copied from http://www.codeproject.com/KB/IP/CSNetworkSniffer.aspx
     public class IPHeader
     {
+        /*
+         * From : http://www.faqs.org/rfcs/rfc760.html     
+         * 
+            0             1               2               3   
+            0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+           |Version|  IHL  |Type of Service|          Total Length         |
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+           |         Identification        |Flags|      Fragment Offset    |
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+           |  Time to Live |    Protocol   |         Header Checksum       |
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+           |                       Source Address                          |
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+           |                    Destination Address                        |
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+           |                    Options                    |    Padding    |
+           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+         * 
+         */
         //IP Header fields
-        private byte      byVersionAndHeaderLength;   //Eight bits for version and header length
-        private byte      byDifferentiatedServices;    //Eight bits for differentiated services (TOS)
-        private ushort    usTotalLength;              //Sixteen bits for total length of the datagram (header + message)
-        private ushort    usIdentification;           //Sixteen bits for identification
-        private ushort    usFlagsAndOffset;           //Eight bits for flags and fragmentation offset
-        private byte      byTTL;                      //Eight bits for TTL (Time To Live)
-        private byte      byProtocol;                 //Eight bits for the underlying protocol
-        private short     sChecksum;                  //Sixteen bits containing the checksum of the header
-                                                      //(checksum can be negative so taken as short)
-        private uint      uiSourceIPAddress;          //Thirty two bit source IP Address
-        private uint      uiDestinationIPAddress;     //Thirty two bit destination IP Address
+        private byte byVersionAndHeaderLength;   //Eight bits for version and header length
+        private byte byDifferentiatedServices;    //Eight bits for differentiated services (TOS)
+        private ushort usTotalLength;              //Sixteen bits for total length of the datagram (header + message)
+        private ushort usIdentification;           //Sixteen bits for identification
+        private ushort usFlagsAndOffset;           //Eight bits for flags and fragmentation offset
+        private byte byTTL;                      //Eight bits for TTL (Time To Live)
+        private byte byProtocol;                 //Eight bits for the underlying protocol
+        private short sChecksum;                  //Sixteen bits containing the checksum of the header
+        //(checksum can be negative so taken as short)
+        private uint uiSourceIPAddress;          //Thirty two bit source IP Address
+        private uint uiDestinationIPAddress;     //Thirty two bit destination IP Address
         //End IP Header fields
-        
-        private byte      byHeaderLength;             //Header length
-        private byte[]    byIPData = new byte[4096];  //Data carried by the datagram
+
+        private byte byHeaderLength;             //Header length
+        private byte[] byIPData = new byte[4096];  //Data carried by the datagram
 
 
         public IPHeader(byte[] byBuffer, int nReceived)
         {
-            
-            try
-            {
+
+            try {
                 //Create MemoryStream out of the received bytes
                 MemoryStream memoryStream = new MemoryStream(byBuffer, 0, nReceived);
                 //Next we create a BinaryReader out of the MemoryStream
@@ -80,16 +106,14 @@ namespace MJsniffer
 
                 //Copy the data carried by the data gram into another array so that
                 //according to the protocol being carried in the IP datagram
-                Array.Copy(byBuffer, 
+                Array.Copy(byBuffer,
                            byHeaderLength,  //start copying from the end of the header
-                           byIPData, 0, 
+                           byIPData, 0,
                            usTotalLength - byHeaderLength);
             }
-        catch (Exception ex)
-        {
-            MessageBox.Show(ex.Message, "MJsniffer", MessageBoxButtons.OK, 
-                MessageBoxIcon.Error);
-        }
+            catch (Exception ex) {
+                //MessageBox.Show(ex.Message, "MJsniffer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         public string Version
@@ -99,16 +123,13 @@ namespace MJsniffer
                 //Calculate the IP version
 
                 //The four bits of the IP header contain the IP version
-                if ((byVersionAndHeaderLength >> 4) == 4)
-                {
+                if ((byVersionAndHeaderLength >> 4) == 4) {
                     return "IP v4";
                 }
-                else if ((byVersionAndHeaderLength >> 4) == 6)
-                {
+                else if ((byVersionAndHeaderLength >> 4) == 6) {
                     return "IP v6";
                 }
-                else
-                {
+                else {
                     return "Unknown";
                 }
             }
@@ -118,7 +139,7 @@ namespace MJsniffer
         {
             get
             {
-                return byHeaderLength.ToString();                
+                return byHeaderLength.ToString();
             }
         }
 
@@ -136,7 +157,7 @@ namespace MJsniffer
             get
             {
                 //Returns the differentiated services in hexadecimal format
-                return string.Format ("0x{0:x2} ({1})", byDifferentiatedServices, 
+                return string.Format("0x{0:x2} ({1})", byDifferentiatedServices,
                     byDifferentiatedServices);
             }
         }
@@ -149,16 +170,13 @@ namespace MJsniffer
                 //represent the flags (which indicate whether the data is 
                 //fragmented or not)
                 int nFlags = usFlagsAndOffset >> 13;
-                if (nFlags == 2)
-                {
+                if (nFlags == 2) {
                     return "Don't fragment";
                 }
-                else if (nFlags == 1)
-                {
+                else if (nFlags == 1) {
                     return "More fragments to come";
                 }
-                else
-                {
+                else {
                     return nFlags.ToString();
                 }
             }
@@ -199,8 +217,7 @@ namespace MJsniffer
                 {
                     return Protocol.UDP;
                 }
-                else
-                {
+                else {
                     return Protocol.Unknown;
                 }
             }
@@ -211,7 +228,7 @@ namespace MJsniffer
             get
             {
                 //Returns the checksum in hexadecimal format
-                return string.Format ("0x{0:x2}", sChecksum);
+                return string.Format("0x{0:x2}", sChecksum);
             }
         }
 
