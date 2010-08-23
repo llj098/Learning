@@ -1,0 +1,111 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Net;
+
+namespace HttpParser.BNF
+{
+    enum LineTokensFunction
+    {
+        OutputMethod,
+        OutputSpace,
+        DoUri,
+        OutputUri,
+        DoVersion,
+        OutputVesion,
+        OutputCRLF,
+        EOF,
+        None,
+    }
+
+    class RequestLineTokens : Tokens<LineTokensFunction>
+    {
+        public RequestLineTokens(Lex lex)
+        {
+            InnerLex = lex;
+        }
+        public int OutputIndex = 0;
+        /*
+         *  Request-Line   = Method SP Request-URI SP HTTP-Version CRLF 
+         *  Method         =  token 
+         *  Request-URI    = "*" | absoluteURI | abs_path | authority
+         */
+
+        private static TokensState<LineTokensFunction> s0 = AddSyntaxState(new RequestLineTokensState(0, false, LineTokensFunction.None));
+        
+        protected override void Init()
+        {
+            InitDFAStates();
+            Inited = true;
+        }
+
+        private void InitDFAStates()
+        {
+            var s1 = AddSyntaxState(new RequestLineTokensState(1, false, LineTokensFunction.OutputMethod));
+            var s2 = AddSyntaxState(new RequestLineTokensState(2, false, LineTokensFunction.OutputSpace));
+            var s3 = AddSyntaxState(new RequestLineTokensState(3, false, LineTokensFunction.DoUri));
+            var s4 = AddSyntaxState(new RequestLineTokensState(4, false, LineTokensFunction.OutputUri));
+            var s5 = AddSyntaxState(new RequestLineTokensState(5, false, LineTokensFunction.DoVersion));
+            var s6 = AddSyntaxState(new RequestLineTokensState(6, true, LineTokensFunction.OutputVesion));
+
+            s0.AddState((int)LexToken.Token, s1.ID);
+            s1.AddState((int)LexToken.SP, s2.ID);
+
+            s2.AddState((int)LexToken.Token, s3.ID);
+            s2.AddState((int)LexToken.Seperator, s3.ID);
+
+            s3.AddState((int)LexToken.Token, s3.ID);//Uri
+            s3.AddState((int)LexToken.Seperator, s3.ID);
+            s3.AddState((int)LexToken.SP, s4.ID);
+
+            s4.AddState((int)LexToken.Token, s5.ID);//Version
+            s4.AddState((int)LexToken.Seperator, s5.ID);
+
+            s5.AddState((int)LexToken.Token, s5.ID);
+            s5.AddState((int)LexToken.Seperator, s5.ID);
+            s5.AddState((int)LexToken.CRLF, s6.ID);
+        }
+    }
+
+    class RequestLineTokensState : TokensState<LineTokensFunction>
+    {
+        public RequestLineTokensState(int id, bool isQuitState, LineTokensFunction function)
+        {
+            ID = id;
+            IsQuitState = isQuitState;
+            Func = function;
+            NextStates = new Dictionary<int, int>();
+        }
+    
+        public override void  HandleState(int action, DFA<Lex.Token,LineTokensFunction> dfa)
+        {
+            RequestLineTokens requestLine = (RequestLineTokens)dfa;
+            if (requestLine.Output == null)
+                requestLine.Output = new TokensOutput();
+
+            switch (Func) {
+                case LineTokensFunction.OutputMethod:
+                    requestLine.Output.TokenType = SyntaxToken.Method;
+                    GetString(requestLine);
+                    break;
+                case LineTokensFunction.OutputUri:
+                    requestLine.Output.TokenType = SyntaxToken.Uri;
+                    GetString(requestLine);
+                    break;
+                case LineTokensFunction.OutputVesion:
+                    requestLine.Output.TokenType = SyntaxToken.Version;
+                    GetString(requestLine);
+                    break;
+                case LineTokensFunction.OutputSpace:
+                case LineTokensFunction.OutputCRLF:
+                case LineTokensFunction.EOF:
+                case LineTokensFunction.None:
+                    requestLine.Output.OutputIndex = requestLine.InnerLex.CurrentToken; 
+                    requestLine.Output.TokenType = SyntaxToken.None;
+                    break;
+            }
+        }
+
+    }
+}

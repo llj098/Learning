@@ -44,9 +44,12 @@ namespace HttpParser
                 States[CurrentState].HandleState(action, this);
             }
 
-            if (States[CurrentState].IsQuitState) {
-                CurrentState = 0;
+            if (States[CurrentState].IsEndState) {
+                return DFAResult.End;
+            }
+            else if (States[CurrentState].IsQuitState) {
                 if (isElse) {
+                    //CurrentState = 0;
                     return DFAResult.ElseQuit;
                 }
                 return DFAResult.Quit;
@@ -107,10 +110,11 @@ namespace HttpParser
     {
         public int ID;
         public bool IsQuitState { get; set; }
+        public bool IsEndState { get; set; }
         protected IDictionary<int,int> NextStates;
 		protected Function Func;
 		public bool NoFunction;
-        public int ElseStateId;
+        public int ElseStateId = -1;
 
         public void AddState(int beginAction, int endAction, int nextAction)
         {

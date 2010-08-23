@@ -1,0 +1,25 @@
+using System;
+
+namespace HttpParser
+{
+    class SyntaxOutputToken
+    {
+        public string Content;
+        public SyntaxToken SyntaxType;
+    }
+
+    abstract class Tokens<Function> : DFA<Lex.Token, Function>
+    {
+        public string InputText;
+
+        public static TokensState<Function> AddSyntaxState(TokensState<Function> state)
+        {
+            return (TokensState<Function>)AddState((DFAState<Lex.Token, Function>) state);
+        }
+    }
+
+    abstract class TokensState<Function> : DFAState<Lex.Token, Function>
+    {
+        
+    }
+}

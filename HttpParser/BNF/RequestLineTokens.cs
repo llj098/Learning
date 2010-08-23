@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Net;
 
 namespace HttpParser.BNF
 {
+    //TODO:Add OutputState State
     enum LineTokensFunction
     {
+        DoMethod,
         OutputMethod,
+        DoSpace,
         OutputSpace,
         DoUri,
         OutputUri,
@@ -19,68 +21,99 @@ namespace HttpParser.BNF
         None,
     }
 
-    class RequestLineTokens : Tokens<LineTokensFunction>
+    class RequestLineTokens:Tokens<LineTokensFunction>
     {
-        public Lex InnerLex;
-        public TokensOutput Output;
-        public RequestLineTokens(Lex lex)
+        public RequestLineTokens(string input)
         {
-            InnerLex = lex;
+            InputText = input;
         }
-        public int OutputIndex = 0;
-        /*
-         *  Request-Line   = Method SP Request-URI SP HTTP-Version CRLF 
-         *  Method         =  token 
-         *  Request-URI    = "*" | absoluteURI | abs_path | authority
-         */
 
-        private static TokensState<LineTokensFunction> s0 = AddSyntaxState(new RequestLineTokensState(0, false, LineTokensFunction.None));
-        
         protected override void Init()
         {
-            InitDFAStates();
+            InitStates();
             Inited = true;
         }
 
-        private void InitDFAStates()
+        private static TokensState<LineTokensFunction> s0 = AddSyntaxState(new RequestLineTokensState(0, false, LineTokensFunction.None));
+        private static void InitStates()
         {
-            var s1 = AddSyntaxState(new RequestLineTokensState(1, false, LineTokensFunction.OutputMethod));
-            var s2 = AddSyntaxState(new RequestLineTokensState(2, false, LineTokensFunction.OutputSpace));
-            var s3 = AddSyntaxState(new RequestLineTokensState(3, false, LineTokensFunction.DoUri));
-            var s4 = AddSyntaxState(new RequestLineTokensState(4, false, LineTokensFunction.OutputUri));
-            var s5 = AddSyntaxState(new RequestLineTokensState(5, false, LineTokensFunction.DoVersion));
-            var s6 = AddSyntaxState(new RequestLineTokensState(6, false, LineTokensFunction.OutputVesion));
+            var s1 = AddSyntaxState(new RequestLineTokensState(1, false, LineTokensFunction.DoMethod));
+            var s2 = AddSyntaxState(new RequestLineTokensState(2, true, LineTokensFunction.OutputMethod));
+            var s3 = AddSyntaxState(new RequestLineTokensState(3, false, LineTokensFunction.DoSpace));
+            var s4 = AddSyntaxState(new RequestLineTokensState(4, true, LineTokensFunction.OutputSpace));
+            var s5 = AddSyntaxState(new RequestLineTokensState(5, false, LineTokensFunction.DoUri));
+            var s6 = AddSyntaxState(new RequestLineTokensState(6, true, LineTokensFunction.OutputUri));
+            var s7 = AddSyntaxState(new RequestLineTokensState(7, false, LineTokensFunction.DoSpace));
+            var s8 = AddSyntaxState(new RequestLineTokensState(8, true, LineTokensFunction.OutputSpace));
+            var s9 = AddSyntaxState(new RequestLineTokensState(9, false, LineTokensFunction.DoVersion));
+            var s10 = AddSyntaxState(new RequestLineTokensState(10, true, LineTokensFunction.OutputVesion));
+            var s11 = AddSyntaxState(new RequestLineTokensState(11, true, LineTokensFunction.EOF, true));
+            //var s5 = AddSyntaxState(new RequestLineTokensState(5, false, LineTokensFunction.DoVersion));
+            //var s6 = AddSyntaxState(new RequestLineTokensState(6, true, LineTokensFunction.OutputVesion,true));
 
-            s0.AddState((int)LexToken.Token, s1.ID);
-            s1.AddState((int)LexToken.SP, s2.ID);
+            //method
+            for (int i = 32; i <= 255; i++) {
+                if (!_seperatorArray.Contains(i) && i != 127 && i != ' ' && i != '\t') {
+                    s0.AddState(i, s1.ID);
+                    s1.AddState(i, s1.ID);
+                }
+            }
+            s1.AddState(new int[] { ' ', '\t' }, s2.ID);//output method
 
-            s2.AddState((int)LexToken.Token, s3.ID);
-            s2.AddState((int)LexToken.Seperator, s3.ID);
+            //space
+            s2.AddState(new int[] { ' ', '\t' }, s3.ID);//dospace
+            s3.AddState(new int[] { ' ', '\t' }, s3.ID);//dospace
+            s3.AddElseState(s4.ID);//output space
 
-            s3.AddState((int)LexToken.Token, s3.ID);//Uri
-            s3.AddState((int)LexToken.Seperator, s3.ID);
-            s3.AddState((int)LexToken.SP, s4.ID);
+            //uri 
+            for (int i = 32; i < 255; i++) {
+                if (i != 127 && i != ' ' && i != '\t') {
+                    s4.AddState(i, s5.ID);
+                    s2.AddState(i, s5.ID);//douri
+                    s5.AddState(i, s5.ID);//douri
+                }
+            }
+            s5.AddState(new int[] { ' ', '\t' }, s6.ID);//output uri
 
-            s4.AddState((int)LexToken.Token, s5.ID);//Version
-            s4.AddState((int)LexToken.Seperator, s5.ID);
+            //space
+            s6.AddState(new int[] { ' ', '\t' }, s7.ID);//do space
+            s7.AddState(new int[] { ' ', '\t' }, s7.ID);//do space
+            s7.AddElseState(s8.ID);//output space
 
-            s5.AddState((int)LexToken.Token, s5.ID);
-            s5.AddState((int)LexToken.Seperator, s5.ID);
-            s5.AddState((int)LexToken.CRLF, s6.ID);
+            //version
+            for (int i = 32; i < 255; i++) {
+                if (i != 127 && i != ' ' && i != '\t') {
+                    s8.AddState(i, s9.ID);
+                    s6.AddState(i, s9.ID);
+                    s9.AddState(i, s9.ID);
+                }
+            }
+
+            s9.AddState('\r', s10.ID);
+            s10.AddState('\n', s11.ID);
+            //s5.AddState('\r', s5.ID);
+            //s5.AddState('\n', s6.ID);
         }
     }
 
     class RequestLineTokensState : TokensState<LineTokensFunction>
     {
-        public RequestLineTokensState(int id, bool isQuitState, LineTokensFunction function)
+        public RequestLineTokensState(int id, bool isQuitState, LineTokensFunction function):this(id,
+            isQuitState,function,false)
+        {
+        }
+
+        public RequestLineTokensState(int id, bool isQuitState, LineTokensFunction function,bool isEndState)
         {
             ID = id;
             IsQuitState = isQuitState;
             Func = function;
             NextStates = new Dictionary<int, int>();
+            IsEndState = isEndState;
         }
-    
-        public override void  HandleState(int action, DFA<Lex.Token,LineTokensFunction> dfa)
+
+
+        public override void HandleState(int action, DFA<int, LineTokensFunction> dfa)
         {
             RequestLineTokens requestLine = (RequestLineTokens)dfa;
             if (requestLine.Output == null)
@@ -100,24 +133,16 @@ namespace HttpParser.BNF
                     GetString(requestLine);
                     break;
                 case LineTokensFunction.OutputSpace:
+                    requestLine.Output.TokenType = SyntaxToken.None;
+                    GetString(requestLine);
+                    break;
                 case LineTokensFunction.OutputCRLF:
-                case LineTokensFunction.EOF:
                 case LineTokensFunction.None:
-                    requestLine.Output.OutputIndex = requestLine.InnerLex.CurrentToken; 
                     requestLine.Output.TokenType = SyntaxToken.None;
                     break;
+                case LineTokensFunction.EOF:
+                    break;
             }
-        }
-
-        private void GetString(RequestLineTokens requestLine)
-        {
-            int begin = requestLine.Output.OutputIndex;
-            int end = requestLine.InnerLex.CurrentToken;
-
-            if (begin > 0)
-                end--;
-            requestLine.Output.Text = requestLine.InnerLex.Input.Substring(begin, end - begin);
-            requestLine.Output.OutputIndex = end;
         }
     }
 }

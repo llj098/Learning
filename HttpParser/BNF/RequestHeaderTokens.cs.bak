@@ -30,7 +30,7 @@ namespace HttpParser.BNF
          *  text           = <any OCTET except CTLs, but including LWS>
          *  
          **************************************************************  
-         *  SO IN OUR SCENE, WE USE BELOW:
+         *  IN OUR SCENE, WE USE BELOW:
          * 
          *  Request-Header = *((message-header) CRLF)
          *                      CRLF

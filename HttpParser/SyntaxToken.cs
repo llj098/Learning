@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace HttpParser
-{
     enum LexToken
     {
         CRLF, Token, Text, SP, Colon, LWS, Seperator
@@ -16,5 +14,3 @@ namespace HttpParser
         HearerName,HeadValue,
         Message,
     }
-
-}

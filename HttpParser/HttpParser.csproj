@@ -45,11 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BNF\Sentence.cs" />
-    <Compile Include="BNF\RequestHeadersState.cs" />
+    <None Include="BNF\Tokens.cs.bak" />
+    <Compile Include="BNF\RequestHeaderTokens.cs" />
     <Compile Include="BNF\RequestLineTokens.cs" />
+    <Compile Include="BNF\Sentence.cs" />
+    <None Include="BNF\RequestHeaderTokens.cs.bak" />
+    <None Include="BNF\RequestLineTokens.cs.bakk" />
     <Compile Include="BNF\RequestPacketState.cs" />
     <Compile Include="CodeTimer.cs" />
+    <None Include="Program.cs.bak" />
     <Compile Include="DFA.cs" />
     <Compile Include="Lex.cs" />
     <Compile Include="Parser.cs" />
